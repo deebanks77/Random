@@ -61,7 +61,9 @@ function App() {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <div className="btnCont">
+          <button type="submit">Login</button>
+        </div>
       </form>
     </div>
   );

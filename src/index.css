@@ -44,29 +44,39 @@ body {
 }
 
 .form div {
-  width: 100%;
-  margin: 50px 30px;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .form label {
   display: block;
   font-size: 20px;
+  align-self: flex-start;
 }
 
 .form input {
-  width: 80%;
+  width: 90%;
   height: 40px;
   outline: none;
   font-size: 18px;
   /* letter-spacing: 2px; */
   padding: 0px 20px;
 }
+
+.form .btnCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .form button {
   background-color: skyblue;
   color: white;
-  width: 90%;
+  width: 100%;
   height: 45px;
-  margin: 0px 30px;
   border: none;
   border-radius: 5px;
   font-size: 20px;
