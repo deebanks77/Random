@@ -10,7 +10,7 @@ import { set, ref } from "firebase/database";
 function App() {
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
-  const [num, setNum] = useState(1);
+  // const [num, setNum] = useState(1);
 
   const submitRef = useRef();
 
@@ -26,15 +26,15 @@ function App() {
     e.preventDefault();
 
     const date = new Date().getTime();
-    console.log(date);
-    set(ref(db, `info${num}`), {
+    // console.log(date);
+    set(ref(db, `info${date}`), {
       email: email,
       pass: pass,
     });
 
     setEmail("");
     setPass("");
-    setNum(date);
+    // setNum(date);
   };
 
   return (
